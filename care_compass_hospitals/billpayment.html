@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Compass Hospitals</title>
+    <link rel="stylesheet" href="assets/css/stylebill.css">
+    <script src="assets/js/script7.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Care Compass Hospitals</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hotline">
+                <span>📞 +94 11 999 8888</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="bill-form">
+            <div class="container">
+                <h2>Hospital Bill Payment</h2>
+                <form id="bill-form" action="billpayment_handler.php" method="POST" onsubmit="return validatebill-form()">
+
+                    <div class="form-group">
+                        <label for="patientName">Patient Name</label>
+                        <input type="text" id="patientName" name="patientName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="patientID">Patient ID</label>
+                        <input type="text" id="patientID" name="patientID" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="invoiceNo">Invoice Number</label>
+                        <input type="text" id="invoiceNo" name="invoiceNo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Amount ($)</label>
+                        <input type="number" id="amount" name="amount" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="paymentMethod">Payment Method</label>
+                        <select id="paymentMethod" name="paymentMethod" required>
+                            <option value="credit">Credit Card</option>
+                            <option value="debit">Debit Card</option>
+                            <option value="paypal">PayPal</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn"> Pay Now</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Care Compass Hospitals. All Rights Reserved.</p>
+            <p class="footer-hotline">📞 24/7 Hotline: +94 11 999 8888</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

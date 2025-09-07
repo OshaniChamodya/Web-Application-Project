@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #003366;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 30px 0;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 9999; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header + * {
+    margin-top: 120px; 
+}
+
+.logo h1 {
+    font-size: 33px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: slideInLeft 1s ease-out;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #007bff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+nav ul li a:hover {
+    background-color: #007bff;
+    transform: scale(1.1);
+}
+
+nav ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.hotline {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 20px;
+    animation: bounceIn 1s ease-out;
+}
+
+
+main {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.contact {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #4a90e2;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    background-color: #e9f7fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.contact-info strong {
+    color: #007b8c;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.operating-hours {
+    background-color: #f1f8e9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.operating-hours ul {
+    list-style: none;
+}
+
+.operating-hours li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #6a8b89;
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-media h3 {
+    font-size: 28px;
+    color: #1d2d50;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.social-media p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.social-media h3 {
+    font-size: 32px;
+    color: #1d2d50;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.social-media p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 25px;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.social-media ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.social-media ul li a {
+    font-size: 15px;
+    color: #fff;
+    background-color: #1d2d50; 
+    padding: 10px;
+    border-radius: 10%;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.social-media ul li a:hover {
+    background-color: #3498db; 
+    transform: scale(1.2); 
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.7); 
+}
+
+.social-media ul li a i {
+    font-size: 22px; 
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-media ul li a:hover i {
+    transform: rotate(20deg); 
+    color: #fff;
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.social-media ul li a {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+
+.location-map {
+    background-color: #f1f8e9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.location-map iframe {
+    width: 100%;
+    border-radius: 8px;
+    border: 0;
+}
+
+.location-map h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 20px;
+    }
+
+    .social-media ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info p,
+    .operating-hours li,
+    .social-media ul li a {
+        font-size: 1rem;
+    }
+
+    .location-map iframe {
+        height: 250px;
+    }
+}
+
+footer {
+    background-color: #1d2d50;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer .social-links a {
+    color: white;
+    margin: 0 15px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #3498db;
+}
+
+.footer-hotline {
+    font-size: 18px;
+}
+
+.hotline-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 86, 179, 0.3);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 22px;
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 999;
+}
+
+.hotline-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-5px);
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0); opacity: 0; }
+    50% { transform: scale(1.2); opacity: 0.6; }
+    100% { transform: scale(1); opacity: 1; }
+}
+

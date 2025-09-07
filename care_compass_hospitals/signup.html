@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Compass Hospitals</title>
+    <link rel="stylesheet" href="assets/css/stylesignup.css">
+    <script src="assets/js/script6.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Care Compass Hospitals</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="main-layer"></div>
+        <div class="auth-container">
+	<h2>Signup</h2>
+            <form action="process-signup.php" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="role">Role:</label>
+                <select id="role" name="role" required>
+                    <option value="admin">Administrator</option>
+                    <option value="staff">Hospital Staff</option>
+                    <option value="patient">Patient</option>
+                </select>
+                
+                <button type="submit"class="btn">Sign Up</button>
+                <p>Already have an account? <a href="signin.html">Sign In</a></p>
+            </form>
+        </div>
+    </main>
+
+ <footer class="footer-container">
+        <div class="footer-layer"></div>
+        <div class="footer-content">
+            <p>&copy; 2024 Care Compass Hospitals. All Rights Reserved.</p>
+            <p class="footer-hotline">📞 24/7 Hotline: +94 11 999 8888</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+

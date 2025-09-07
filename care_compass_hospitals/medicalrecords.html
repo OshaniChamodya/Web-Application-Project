@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Compass Hospitals</title>
+    <link rel="stylesheet" href="assets/css/stylemedical.css">
+    <script src="assets/js/script8.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Care Compass Hospitals</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="appointment.html">Appointments</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hotline">
+                <span>📞 +94 11 999 8888</span>
+            </div>
+        </div>
+    </header>
+<main>
+    <section class="container">
+        <h2 class="section-title">Medical Records </h2>
+        <p class="section-text">View your medical history below.</p>
+    </section>
+        
+    <section class="search-container">
+        <form class="search-form" method="POST" action="fetch-records.php">
+            <div class="input-group">
+                <label for="search-id" class="form-label">Search by Patient ID:</label>
+                <input type="text" id="search-id" name="patient_id" class="form-input" placeholder="Enter Patient ID" required>
+            </div>
+            <button type="submit" class="btn">Search</button>
+        </form>
+    </section>
+</main>
+
+
+   <footer>
+        <div class="container">
+            <p>&copy; 2024 Care Compass Hospitals. All Rights Reserved.</p>
+            <p class="footer-hotline">📞 24/7 Hotline: +94 11 999 8888</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
